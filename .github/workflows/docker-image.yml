@@ -25,7 +25,6 @@ jobs:
         minor_pattern: "feat:"
         format: "${major}.${minor}.${patch}-prerelease${increment}"
       id: version
-
     - name: Docker login
       env:
         DOCKER_USER: ${{ secrets.DOCKER_USER }}
